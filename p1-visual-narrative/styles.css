@@ -1,0 +1,50 @@
+body{
+    margin:0;
+}
+
+p{
+    display:none;
+}
+
+#cardsContainer{
+    position:absolute;
+    display:flex;
+    justify-content:space-evenly;
+    left:0;
+    top:0;
+    width:100vw;
+    height:300px;
+}
+
+.cards{
+    align-items:center;
+}
+
+.screwIcons{
+    width:auto;
+    height:100%;
+}
+
+img:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+}
+
+#overlay{
+    display:none;
+    position:absolute;
+    width:100vw;
+    height:calc(100vh - 200px);
+    left:0;
+    top:200px;
+    background:whitesmoke;
+}
+
+#closeBtn{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:50px;
+    height:50px;
+    z-index:100;
+}
