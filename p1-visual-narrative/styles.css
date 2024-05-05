@@ -1,50 +1,209 @@
 body{
     margin:0;
+    background:#1f1f1f;
 }
 
-p{
-    display:none;
-}
-
-#cardsContainer{
+.homepageContainer{
     position:absolute;
-    display:flex;
-    justify-content:space-evenly;
     left:0;
     top:0;
     width:100vw;
-    height:300px;
+    height:200vh;
 }
 
-.cards{
-    align-items:center;
+#coverForWeb{
+    position:absolute;
+    left:0;
+    top:-325px;
+    width:100vw;
 }
 
-.screwIcons{
-    width:auto;
-    height:100%;
+#bondedWordmark{
+    position:absolute;
+    right:80px;
+    bottom:calc(100vh + 80px);
+    width:500px;
 }
 
-img:hover{
-    transform:scale(1.1);
+#bondedWordmark:hover{
+    position:absolute;
+    right:80px;
+    bottom:calc(100vh + 80px);
+    width:500px;
+    scale:1.1;
     cursor:pointer;
 }
 
-#overlay{
-    display:none;
+#screwWordmarkWhite{
     position:absolute;
-    width:100vw;
-    height:calc(100vh - 200px);
-    left:0;
-    top:200px;
-    background:whitesmoke;
+    left:240px;
+    top:calc(100vh + 60px);
+    height:calc(100vh - 120px);
+    rotate:-15deg;
+    animation: slow-spin 10s linear infinite;
 }
 
-#closeBtn{
+#bondDef{
     position:absolute;
-    top:10px;
-    right:10px;
-    width:50px;
-    height:50px;
-    z-index:100;
+    right:80px;
+    top:calc(100vh + 80px);
+    width:400px;
+}
+
+#screwArrowBtnWhite{
+    position:absolute;
+    right:80px;
+    bottom:40px;
+    width:100px;
+}
+
+#screwArrowBtnWhite:hover{
+    scale:1.25;
+}
+
+@keyframes slow-spin {
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+
+#menuPgContainer{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100vw;
+    height:100vh;
+    background:white;
+}
+
+#screwArrowBtnGray{
+    position:absolute;
+    top:40px;
+    left:40px;
+    width:100px;
+    rotate:180deg;
+}
+
+#screwArrowBtnGray:hover{
+    scale:1.25;
+}
+
+#menuContainer{
+    display:flex;
+    justify-content:space-between;
+    position:absolute;
+    left:calc(50vw - 700px);
+    top:calc(50vh - 200px);
+    width:1400px;
+    height:400px;
+}
+
+.screwIcon{
+    height:400px;
+}
+
+.screwIcon:hover{
+    scale:1.1;
+}
+
+#chemPgContainer{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100vw;
+    height:100vh;
+    background:#C0CCD8;
+}
+
+#fallibilityPgContainer{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100vw;
+    height:100vh;
+    background:#D8D0C0;
+}
+
+#purposePgContainer{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100vw;
+    height:100vh;
+    background:#CFE0CC;
+}
+
+#lovePgContainer{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100vw;
+    height:100vh;
+    background:#E0CDD9;
+}
+
+.xButton{
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:80px;
+}
+
+.xButton:hover{
+    scale:1.25;
+}
+
+.carousel{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:absolute;
+    left:calc(50vw - 720px);
+    top:calc(50vh - 345px);
+    width:1440px;
+    height:650px;
+}
+
+.leftMenuArrow{
+    width:60px;
+}
+
+.leftMenuArrow:hover{
+    width:60px;
+    scale:1.25;
+    cursor:pointer;
+}
+
+.rightMenuArrow{
+    width:60px;
+    rotate:180deg;
+    cursor:pointer;
+}
+
+.rightMenuArrow:hover{
+    width:60px;
+    rotate:180deg;
+    scale:1.25;
+}
+
+.spreadContainer{
+    height:700px;
+}
+
+.spread{
+    height:700px;
+}
+
+#pgIndicatorContainer{
+    position:absolute;
+    left:calc(50vw - 20px);
+    bottom:40px;
+    width:40px;
+}
+
+#pgIndicator{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
 }
